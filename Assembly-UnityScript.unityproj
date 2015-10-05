@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{3532F3A8-0464-61CF-1A5B-DD0AE02F2266}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-UnityScript</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_GENERICS;ENABLE_SUBSTANCE;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_3_4;UNITY_4_3;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\NewRespawn.js" />
+     <Compile Include="Assets\Scripts\Camera\FadeoutLineOfSight.js" />
+     <Compile Include="Assets\Scripts\Camera\OrbitCamera.js" />
+     <Compile Include="Assets\Scripts\Camera\SmoothFollowCamera.js" />
+     <Compile Include="Assets\Scripts\Camera\SmoothLookAt.js" />
+     <Compile Include="Assets\Scripts\CameraFocus.js" />
+     <Compile Include="Assets\Scripts\CameraScrolling.js" />
+     <Compile Include="Assets\Scripts\CameraTargetAttributes.js" />
+     <Compile Include="Assets\Scripts\DeathTrigger.js" />
+     <Compile Include="Assets\Scripts\Enemies\EnemyAI.js" />
+     <Compile Include="Assets\Scripts\Enemies\EnemyDeath.js" />
+     <Compile Include="Assets\Scripts\Enemies\EnemyRespawn.js" />
+     <Compile Include="Assets\Scripts\Enemies\FloatingPlatform.js" />
+     <Compile Include="Assets\Scripts\Enemies\LaserTrap - Up.js" />
+     <Compile Include="Assets\Scripts\Enemies\LaserTrap.js" />
+     <Compile Include="Assets\Scripts\GUI\FPS.js" />
+     <Compile Include="Assets\Scripts\GUI\GameHUD.js" />
+     <Compile Include="Assets\Scripts\GameOverGUI.js" />
+     <Compile Include="Assets\Scripts\GameWonGUI.js" />
+     <Compile Include="Assets\Scripts\LevelAttributes.js" />
+     <Compile Include="Assets\Scripts\Misc\DroppableMover.js" />
+     <Compile Include="Assets\Scripts\Misc\FenceTextureOffset.js" />
+     <Compile Include="Assets\Scripts\Misc\FuelCellGlowLookAt.js" />
+     <Compile Include="Assets\Scripts\Misc\Jumppad.js" />
+     <Compile Include="Assets\Scripts\Misc\LevelStatus.js" />
+     <Compile Include="Assets\Scripts\Misc\ObjectRotator.js" />
+     <Compile Include="Assets\Scripts\Misc\OneShotParticles.js" />
+     <Compile Include="Assets\Scripts\Misc\Pickup.js" />
+     <Compile Include="Assets\Scripts\Misc\Respawn.js" />
+     <Compile Include="Assets\Scripts\PlatformFloat.js" />
+     <Compile Include="Assets\Scripts\Player\FalloutDeath.js" />
+     <Compile Include="Assets\Scripts\Player\PlatformerController.js" />
+     <Compile Include="Assets\Scripts\Player\PlatformerPlayerAnimation.js" />
+     <Compile Include="Assets\Scripts\Player\PlatformerPushBodies.js" />
+     <Compile Include="Assets\Scripts\Player\PlayerAnimation.js" />
+     <Compile Include="Assets\Scripts\Player\PlayerAttack.js" />
+     <Compile Include="Assets\Scripts\Player\PlayerCharacter.js" />
+     <Compile Include="Assets\Scripts\Player\PlayerControl.js" />
+     <Compile Include="Assets\Scripts\Player\ThirdPersonPushBodies.js" />
+     <Compile Include="Assets\Scripts\SpawnPoint.js" />
+     <Compile Include="Assets\Scripts\StartMenuGUI.js" />
+     <Compile Include="Assets\SimpleRespawn.js" />
+     <Compile Include="Assets\platform.js" />
+     <None Include="Assets\Imported Assets\Textures\Glass\glass.shader" />
+     <None Include="Assets\Space Assets\Aero Shooting\Shaders\Particle Add (Overlay).shader" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
